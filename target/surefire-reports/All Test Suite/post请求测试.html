@@ -1,0 +1,164 @@
+<html>
+<head>
+<title>TestNG:  post请求测试</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>post请求测试</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Nov 30 20:13:38 CST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>7 seconds (7481 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.test.RegisterCase.test()'><b>test</b><br>Test class: com.test.RegisterCase<br>Parameters: 5, 2, {"mobile_phone":"${mobilephone}","pwd":""}, {"code":1,"msg":"密码为空","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}, , </td>
+<td></td>
+<td>2</td>
+<td>com.test.RegisterCase@7fac631b</td></tr>
+<tr>
+<td title='com.test.RegisterCase.test()'><b>test</b><br>Test class: com.test.RegisterCase<br>Parameters: 6, 2, {"mobile_phone":"","pwd":"${pwd}"}, {"code":1,"msg":"手机号为空","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}, , </td>
+<td></td>
+<td>0</td>
+<td>com.test.RegisterCase@7fac631b</td></tr>
+<tr>
+<td title='com.test.RegisterCase.test()'><b>test</b><br>Test class: com.test.RegisterCase<br>Parameters: 7, 2, {"mobile_phone":"138","pwd":"${pwd}"}, {"code":2,"msg":"无效的手机格式","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}, , </td>
+<td></td>
+<td>0</td>
+<td>com.test.RegisterCase@7fac631b</td></tr>
+<tr>
+<td title='com.test.RegisterCase.test()'><b>test</b><br>Test class: com.test.RegisterCase<br>Parameters: 8, 2, {"mobile_phone":"${mobilephone}","pwd":"123"}, {"code":2,"msg":"密码格式为8到16位","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}, , </td>
+<td></td>
+<td>0</td>
+<td>com.test.RegisterCase@7fac631b</td></tr>
+<tr>
+<td title='com.test.RegisterCase.test()'><b>test</b><br>Test class: com.test.RegisterCase<br>Parameters: 9, 2, {"mobile_phone":"${mobilephone}","pwd":"${pwd}"}, {"code":0,"msg":"OK","data":{"id":38697,"reg_name":"小柠檬","mobile_phone":"13800000000"},"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}, [{"no":"1","sql":"SELECT id FROM member WHERE mobile_phone = '${mobilephone}'"}], [{"no":"1","sql":"SELECT id FROM member WHERE mobile_phone = '${mobilephone}'"}]</td>
+<td></td>
+<td>1</td>
+<td>com.test.RegisterCase@7fac631b</td></tr>
+<tr>
+<td title='com.test.RegisterCase.test()'><b>test</b><br>Test class: com.test.RegisterCase<br>Parameters: 10, 2, {"mobile_phone":"${mobilephone}","pwd":"${pwd}"}, {"code":2,"msg":"账号已存在","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}, , </td>
+<td></td>
+<td>0</td>
+<td>com.test.RegisterCase@7fac631b</td></tr>
+<tr>
+<td title='com.test.LoginCase.test()'><b>test</b><br>Test class: com.test.LoginCase<br>Parameters: 11, 3, {"mobile_phone":"${mobilephone}","pwd":""}, {"code":1,"msg":"密码为空","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}, , </td>
+<td></td>
+<td>0</td>
+<td>com.test.LoginCase@5b87ed94</td></tr>
+<tr>
+<td title='com.test.LoginCase.test()'><b>test</b><br>Test class: com.test.LoginCase<br>Parameters: 12, 3, {"mobile_phone":"","pwd":"${pwd}"}, {"code":1,"msg":"手机号码为空","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}, , </td>
+<td></td>
+<td>0</td>
+<td>com.test.LoginCase@5b87ed94</td></tr>
+<tr>
+<td title='com.test.LoginCase.test()'><b>test</b><br>Test class: com.test.LoginCase<br>Parameters: 13, 3, {"mobile_phone":"138","pwd":"${pwd}"}, {"code":2,"msg":"无效的手机格式","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}, , </td>
+<td></td>
+<td>0</td>
+<td>com.test.LoginCase@5b87ed94</td></tr>
+<tr>
+<td title='com.test.LoginCase.test()'><b>test</b><br>Test class: com.test.LoginCase<br>Parameters: 14, 3, {"mobile_phone":"${mobilephone}","pwd":"abc123"}, {"code":1001,"msg":"账号信息错误","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}, , </td>
+<td></td>
+<td>0</td>
+<td>com.test.LoginCase@5b87ed94</td></tr>
+<tr>
+<td title='com.test.LoginCase.test()'><b>test</b><br>Test class: com.test.LoginCase<br>Parameters: 15, 3, {"mobile_phone":"${mobilephone}","pwd":"${pwd}"}, {"code":0,"msg":"OK","data":{"id":19819,"leave_amount":123.0,"mobile_phone":"13866666666","reg_name":"小柠檬","reg_time":"2020-09-15 16:37:00.0","type":1,"token_info":{"token_type":"Bearer","expires_in":"2020-09-17 17:03:55","token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE5ODE5LCJleHAiOjE2MDAzMzM0MzV9.UVnSkHmIgv3IX37KOXOcTGmOedslFRdjtb9bxcelEI3_thjX25KQCPttBTUmcyXUn8Lw4p1_3Y3FegapTVDICg"}},"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}, , </td>
+<td></td>
+<td>0</td>
+<td>com.test.LoginCase@5b87ed94</td></tr>
+<tr>
+<td title='com.test.RechargeCase.test()'><b>test</b><br>Test class: com.test.RechargeCase<br>Parameters: 16, 4, {"member_id":"0","amount":"123"}, {"code":1007,"msg":"无权限访问，请检查参数","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}, , </td>
+<td></td>
+<td>0</td>
+<td>com.test.RechargeCase@6e0e048a</td></tr>
+<tr>
+<td title='com.test.RechargeCase.test()'><b>test</b><br>Test class: com.test.RechargeCase<br>Parameters: 17, 4, {"member_id":"${memberId}","amount":""}, {"code":1,"msg":"余额为空","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}, , </td>
+<td></td>
+<td>0</td>
+<td>com.test.RechargeCase@6e0e048a</td></tr>
+<tr>
+<td title='com.test.RechargeCase.test()'><b>test</b><br>Test class: com.test.RechargeCase<br>Parameters: 18, 4, {"member_id":"${memberId}","amount":"500001"}, {"code":2,"msg":"余额必须大于0并且小于或者等于500000","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}, , </td>
+<td></td>
+<td>0</td>
+<td>com.test.RechargeCase@6e0e048a</td></tr>
+<tr>
+<td title='com.test.RechargeCase.test()'><b>test</b><br>Test class: com.test.RechargeCase<br>Parameters: 19, 4, {"member_id":"${memberId}","amount":"-1"}, {"code":2,"msg":"余额必须大于0并且小于或者等于500000","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}, , </td>
+<td></td>
+<td>0</td>
+<td>com.test.RechargeCase@6e0e048a</td></tr>
+<tr>
+<td title='com.test.RechargeCase.test()'><b>test</b><br>Test class: com.test.RechargeCase<br>Parameters: 20, 4, {"member_id":"${memberId}","amount":"123.123"}, {"code":2,"msg":"余额小数超过两位","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}, , </td>
+<td></td>
+<td>0</td>
+<td>com.test.RechargeCase@6e0e048a</td></tr>
+<tr>
+<td title='com.test.RechargeCase.test()'><b>test</b><br>Test class: com.test.RechargeCase<br>Parameters: 21, 4, {"member_id":"${memberId}","amount":"123"}, {"code":0,"msg":"OK","data":{"id":19819,"leave_amount":50247.0,"mobile_phone":"13866666666","reg_name":"小柠檬","reg_time":"2020-09-15 16:37:00.0","type":1},"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}, [{"no":"1","sql":"SELECT leave_amount FROM member WHERE id = '${memberId}'"},{"no":"2","sql":"SELECT COUNT(*) count FROM financelog WHERE income_member_id = '${memberId}'"}], [{"no":"1","sql":"SELECT leave_amount FROM member WHERE id = '${memberId}'"},{"no":"2","sql":"SELECT COUNT(*) count FROM financelog WHERE income_member_id = '${memberId}'"}]</td>
+<td></td>
+<td>1</td>
+<td>com.test.RechargeCase@6e0e048a</td></tr>
+</table><p>
+</body>
+</html>
