@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="All Test Suite" thread-count="20" allow-return-values="true">
+    <!--thread-count设置多线程执行测试用例-->
+<!--    <test name="post请求测试">
+        <classes>
+            <class name="com.test.DemoCase"></class>
+        </classes>
+    </test>-->
+    <test name="post请求测试">
+        <classes>
+            <class name="com.test.RegisterCase"></class>
+            <class name="com.test.LoginCase"></class>
+            <class name="com.test.RechargeCase"></class>
+        </classes>
+    </test>
+
+</suite>
